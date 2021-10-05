@@ -1,10 +1,8 @@
 import s from "./Label.module.css"
 
-function Label() {
+function Label(props) {
     return (
-      <div className={s.Label}>
- 
-      </div>
+      <span className={s.label}>{props.label}</span>
     );
   }
   

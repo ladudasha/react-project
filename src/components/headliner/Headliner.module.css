@@ -3,19 +3,12 @@
     align-items: center;
 }
 
-.thumbnail-img {
+.thumbnailImg {
     border-radius: 12px;
 }
 
 .info {
     margin-left: 24px;
-}
-
-.title {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    margin: 3px 0 10px;
 }
 
 .rating {
@@ -25,8 +18,7 @@
 }
 
 .like,
-.dislike,
-.time {
+.dislike {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
@@ -38,32 +30,16 @@
     color: #626264;
 }
 
-.dislike,
-.time {
+.dislike {
     color: #878787;
 }
 
-.like-icon,
-.dislike-icon {
+.likeIcon,
+.dislikeIcon {
     margin-right: 4px;
-}
-
-.time-icon {
-    margin-right: 7px;
 }
 
 .wrapper {
     display: flex;
     justify-content: space-between;
-}
-
-.label {
-    background: rgba(80, 62, 157, 0.1);
-    border-radius: 4px;
-    padding: 4px 8px;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 145%;
-    text-align: center;
-    color: #503E9D;
 }

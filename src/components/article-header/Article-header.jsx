@@ -1,10 +1,8 @@
 import s from "./Article-header.module.css"
 
-function ArticleHeader() {
+function ArticleHeader(props) {
     return (
-      <div className={s.ArticleHeader}>
- 
-      </div>
+      <h1 className={s.title} >{props.title}</h1>
     );
   }
   
