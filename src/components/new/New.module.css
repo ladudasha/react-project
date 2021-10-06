@@ -1,0 +1,16 @@
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 336px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .newTitle {
+    width: 222px;
+} */

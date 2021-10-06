@@ -7,6 +7,9 @@ import img3 from './assets/images/image3.jpg';
 import img4 from './assets/images/image4.jpg';
 import img5 from './assets/images/image5.jpg';
 import img6 from './assets/images/image6.jpg';
+import New from './components/new/New';
+// import img1New from './../../assets/images/New/image1.jpg';
+
 
 
 function App() {
@@ -24,21 +27,14 @@ function App() {
             <Headliner title="Mother who left her baby" thumbnail={img4} label="ABC NEWS"/>
             <Headliner title="Mother of Stefanie Rengel" thumbnail={img5} label="CW6 NEWS"/>
             <Headliner title="World   Cup: Popular items" thumbnail={img6} label="CNN NEWS"/>
-
           </div>
-        </section>
-        <section className="headliners">
-          <h2 className="block-title">Today’s Headlines</h2>
-          <div className="block-content">
-            <Headliner title="Hate speech vs free speech" thumbnail={img1} label="BBC NEWS"/>
-            <Headliner title="Ontario Liberal leadership" thumbnail={img2} label="BBC NEWS"/>
-            <Headliner title="Victim of Scarborough" thumbnail={img3} label="BBC NEWS"/>
-            <Headliner title="Mother who left her baby" thumbnail={img4} label="ABC NEWS"/>
-            <Headliner title="Mother of Stefanie Rengel" thumbnail={img5} label="CW6 NEWS"/>
-            <Headliner title="World   Cup: Popular items" thumbnail={img6} label="CNN NEWS"/>
 
-          </div>
+        <New/>
+        {/* <New/>
+        <New/> */}
+
         </section>
+        
       </main>
 
 
