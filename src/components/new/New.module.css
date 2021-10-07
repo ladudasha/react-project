@@ -5,12 +5,22 @@
     width: 336px;
 }
 
+.img1New {
+    margin-bottom: 16px;
+    border-radius: 12px;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
-
-/* .newTitle {
-    width: 222px;
-} */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 75px;
+    gap: 5px;
+}

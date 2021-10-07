@@ -25,3 +25,26 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
+
+.block-contentNew {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    height: 32px;
+}
+
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+} */
