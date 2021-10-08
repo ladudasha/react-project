@@ -9,7 +9,7 @@ function New(props) {
         <article className={s.new}>
             <img className={s.img1New} src={props.thumbnail} alt="img1New" />
             <div className={s.wrapper}>
-                <ArticleHeader title={props.title}/>
+                <ArticleHeader title={props.title} />
                 <div className={s.box}>
                     <Label label={props.label}/>
                     <Time/>

@@ -12,7 +12,7 @@ function Headliner(props) {
         <article className={s.headliner}>
         <img className={s.thumbnailImg} src={props.thumbnail} alt="thumbnail-img" />
         <div className={s.info}>
-            <ArticleHeader title={props.title}/>
+            <ArticleHeader title={props.title} className={s.headlinerTitle}/>
             <div className={s.rating}>
                 <div className={s.like}>
                     <img className={s.likeIcon} img src={likeIcon} alt="" />

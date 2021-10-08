@@ -1,16 +1,13 @@
-import s from "./Navigation.module.css";
-
+import s from "./Navigation.module.css"
 
 function Navigation(props) {
     return (
-        <article className={s.navigation}>
-            <img className={s.img1} src={props.thumbnail} alt="img1" />
-            <h5>San Francisco, California</h5>
-
-        </article>
-    
+        <div className={s.NavigationItem}>
+            <img src={props.thumbnail} alt="" />
+            <h3 className={s.navigationTitle}>{props.title}</h3>
+        </div>
+   
     );
-
-}
-
-export default Navigation;
+  }
+  
+  export default Navigation;

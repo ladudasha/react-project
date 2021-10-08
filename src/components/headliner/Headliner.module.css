@@ -3,6 +3,11 @@
     align-items: center;
 }
 
+.headlinerTitle {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .thumbnailImg {
     border-radius: 12px;
 }

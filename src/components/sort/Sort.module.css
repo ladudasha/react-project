@@ -1,0 +1,24 @@
+.sort {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.sortImg {
+    margin-right: 12px;
+}
+
+.sortTitle {
+    position: relative;
+}
+
+.sortTitle::after {
+    content: "";
+    position: absolute;
+    background-image: url(./../../assets/images/Header/Sort/upDown.svg);
+    background-repeat: no-repeat;
+    top: 3px;
+    right: -15px;
+    width: 10px;
+    height: 18px;
+}

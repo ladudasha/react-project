@@ -9,6 +9,29 @@
 
 .header {
     grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 19px;
+}
+
+.headerLeft {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.headerRight {
+    display: flex;
+    width: 515px;
+    justify-content: space-between;
+}
+
+.headerUser {
+    border-radius: 50%;
 }
 
 .sidebar {
@@ -18,33 +41,97 @@
 
 .main {
     grid-area: c;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn {
+    color: #503E9D;
+    display: block;
+    width: 70px;
+    height: 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    background-image: url(./assets/images/Channel/rowRight.svg);
+    background-repeat: no-repeat;
+    top: 7px;
+    right: -8px;
+    width: 10px;
+    height: 18px;
 }
 
 .block-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 336px);
     gap: 32px;
 }
 
-.block-contentNew {
+.channelWrapper {
     display: flex;
-    justify-content: space-around;
+    gap: 32px;
     align-items: center;
 }
 
-.wrap {
+.channelTop {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
     height: 32px;
 }
 
-
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     margin: 0;
-} */
+}
+
+.sidebar {
+    padding: 33px 16px 34px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.sidebarTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarLogo {
+    width: 187px;
+    height: 46px;
+    margin: 0 auto 33px;
+}
+
+.navigationList {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 272px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigationBox {
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

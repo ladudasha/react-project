@@ -18,24 +18,73 @@ import channelImg3 from './assets/images/Channel/image3.png';
 import channelImg4 from './assets/images/Channel/image4.png';
 import channelImg5 from './assets/images/Channel/image5.png';
 import channelImg6 from './assets/images/Channel/image6.png';
+import Sort from './components/sort/Sort';
+import sortImg1 from './assets/images/Header/Sort/img1.png';
+import sortImg2 from './assets/images/Header/Sort/img2.png';
+import sortImg3 from './assets/images/Header/Sort/img3.png';
+import Form from './components/form/Form';
+import headerButton from './assets/images/Header/button.png';
+import headerUser from './assets/images/Header/user.png';
+
 import Navigation from './components/navigation/Navigation';
-import navigationImg1 from './assets/images/Header/Navigation/img1.png';
+import logo from './assets/images/Navigation/logo-01 1 (1).jpg';
+
+import navigationImg1 from './assets/images/Navigation/icon1.svg';
+import navigationImg2 from './assets/images/Navigation/icon2.svg';
+import navigationImg3 from './assets/images/Navigation/icon3.svg';
+import navigationImg4 from './assets/images/Navigation/icon4.svg';
+import navigationImg5 from './assets/images/Navigation/icon5.svg';
+import navigationImg6 from './assets/images/Navigation/icon6.svg';
+import navigationImg7 from './assets/images/Navigation/icon7.svg';
 
 
 function App() {
   return (
     <div className="App">
       <header className="header">
-        <Navigation thumbnail={navigationImg1}/>
+        <div className="headerLeft">
+          <Sort thumbnail={sortImg1} title="San Francisco, California"/>
+          <Sort thumbnail={sortImg2} title="Analysis"/>
+          <Sort thumbnail={sortImg3} title="Monthly"/>
+        </div>
+        <div className="headerRight">
+        <Form/>
+        <img src={headerButton} alt="" />
+        <img className="headerUser" src={headerUser} alt="" />
+        </div>
+      
       </header>
-      <aside className="sidebar">aside</aside>
+      
+      <aside className="sidebar">
+        <div className="sidebarTop">
+          <img className="sidebarLogo" src={logo} alt="" />
+          <div className="navigationList">
+            <div className="navigationBox">
+              <Navigation title="Home" thumbnail={navigationImg1}/>
+              <Navigation title="Explore" thumbnail={navigationImg2}/>
+              <Navigation title="Saved" thumbnail={navigationImg3}/>
+              <Navigation title="Subscriptions" thumbnail={navigationImg4}/>
+              <Navigation title="Messages" thumbnail={navigationImg5}/>
+              <Navigation title="HoSettingsme" thumbnail={navigationImg6}/>
+            </div>
+            <div className="navigationLogout">
+              <Navigation title="Logout" thumbnail={navigationImg7}/>
+            </div>
+          </div>
+        </div>
+        
+        <div className="sidebarBottom">
+          
+        </div>
+      </aside>
+      
       <main className="main">
       <section className="channel">
-        <div className="wrap">
+        <div className="channelTop">
         <h2 className="block-title">Explore Channels</h2>
-        <button>See all</button>
+        <button className="btn">See all</button>
         </div>
-        <div className="block-contentNew">
+        <div className="channelWrapper">
           <Channel title="FOX NEWS" thumbnail={channelImg1}/>
           <Channel title="CW6 NEWS" thumbnail={channelImg2}/>
           <Channel title="ABC NEWS" thumbnail={channelImg3}/>
