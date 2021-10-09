@@ -36,6 +36,7 @@ import navigationImg4 from './assets/images/Navigation/icon4.svg';
 import navigationImg5 from './assets/images/Navigation/icon5.svg';
 import navigationImg6 from './assets/images/Navigation/icon6.svg';
 import navigationImg7 from './assets/images/Navigation/icon7.svg';
+import sidebarImg from './assets/images/sidebar/fire.svg';
 
 
 function App() {
@@ -72,8 +73,19 @@ function App() {
             </div>
           </div>
         </div>
-        
+    
+        <hr className="sidebarLine" align="center"  color="#E8E8E8" />
+        <hr className="sidebarLine" align="center"  color="#FFFFFF" />
+      
         <div className="sidebarBottom">
+          <div className="sidebarCard">
+            <img className="sidebarImg" src={sidebarImg} alt="" />
+            <h3 className="sidebarTitle">Subscribe to our
+            new plan <span className="sidebarMany">$25</span></h3>
+            <p className="sidebarText">It is a limited time offer that will expire soon.</p>
+            <button className="sidebarBtn">Subscribe now</button>
+
+          </div>
           
         </div>
       </aside>

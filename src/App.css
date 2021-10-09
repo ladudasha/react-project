@@ -100,16 +100,10 @@ h6 {
     margin: 0;
 }
 
-.sidebar {
-    padding: 33px 16px 34px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-
 .sidebarTop {
     display: flex;
     flex-direction: column;
+    padding: 33px 16px 0px;
 }
 
 .sidebarLogo {
@@ -126,7 +120,7 @@ h6 {
     height: 472px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .navigationBox {
@@ -134,4 +128,88 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.sidebar {
+    width: 304px;
+    background: #F8F8F8;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.sidebarCard {
+    width: 240px;
+    height: 324px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+}
+
+.sidebarImg {
+    margin-bottom: 24px;
+}
+
+.sidebarLine {
+    width: 271px;
+}
+
+.sidebarTitle {
+    color: #182135;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 176px;
+}
+
+.sidebarMany {
+    color: #FB6D3A;
+    text-decoration-line: underline;
+}
+
+.sidebarText {
+    color: #626264;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sidebarBtn {
+    width: 176px;
+    height: 48px;
+    background: #503E9D;
+    border-radius: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #F7FAFC;
+    position: relative;
+}
+
+.sidebarBtn::after {
+    content: "";
+    position: absolute;
+    background-image: url(./assets/images/sidebar/rowRight.svg);
+    background-repeat: no-repeat;
+    top: 17px;
+    right: 3px;
+    width: 16px;
+    height: 13px;
+}
+
+.sidebarBottom {
+    padding: 24px 32px 34px;
 }

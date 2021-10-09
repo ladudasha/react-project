@@ -6,8 +6,7 @@ function Navigation(props) {
             <img src={props.thumbnail} alt="" />
             <h3 className={s.navigationTitle}>{props.title}</h3>
         </div>
-   
+
     );
-  }
-  
-  export default Navigation;
+}
+export default Navigation;
