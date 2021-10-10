@@ -73,9 +73,11 @@ function App() {
             </div>
           </div>
         </div>
-    
-        <hr className="sidebarLine" align="center"  color="#E8E8E8" />
-        <hr className="sidebarLine" align="center"  color="#FFFFFF" />
+        <div className="sidebarLines">
+          <hr className="sidebarLine" align="center"      color="#E8E8E8" />
+          <hr className="sidebarLine" align="center"  color="#FFFFFF" />
+        </div>
+      
       
         <div className="sidebarBottom">
           <div className="sidebarCard">
@@ -107,7 +109,7 @@ function App() {
 
         </section>
         
-        <section className="headliners">
+        <section className="headliner">
           <h2 className="block-title">Today’s Headlines</h2>
           <div className="block-content">
             <Headliner title="Hate speech vs free speech" thumbnail={img1} label="BBC NEWS"/>
@@ -132,25 +134,6 @@ function App() {
         
         
       </main>
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
