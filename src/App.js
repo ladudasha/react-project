@@ -37,6 +37,9 @@ import navigationImg5 from './assets/images/Navigation/icon5.svg';
 import navigationImg6 from './assets/images/Navigation/icon6.svg';
 import navigationImg7 from './assets/images/Navigation/icon7.svg';
 import sidebarImg from './assets/images/sidebar/fire.svg';
+import SectionTitle from './components/sectionTitle/SectionTitle';
+
+
 
 
 function App() {
@@ -59,24 +62,42 @@ function App() {
       <aside className="sidebar">
         <div className="sidebarTop">
           <img className="sidebarLogo" src={logo} alt="" />
-          <div className="navigationList">
-            <div className="navigationBox">
-              <Navigation title="Home" thumbnail={navigationImg1}/>
-              <Navigation title="Explore" thumbnail={navigationImg2}/>
-              <Navigation title="Saved" thumbnail={navigationImg3}/>
-              <Navigation title="Subscriptions" thumbnail={navigationImg4}/>
-              <Navigation title="Messages" thumbnail={navigationImg5}/>
-              <Navigation title="HoSettingsme" thumbnail={navigationImg6}/>
-            </div>
+          <div className="navigationBox">
+            <ul className="navigationList">
+              <li className="navigationItem">
+                <a className="navigationLink" href="">
+                  <Navigation title="Home" thumbnail={navigationImg1}/></a>
+              </li>
+
+              <li className="navigationItem">
+                <a className="navigationLink" href=""><Navigation title="Explore" thumbnail={navigationImg2}/></a>
+              </li>
+
+              <li className="navigationItem">
+                <a className="navigationLink" href=""><Navigation title="Saved" thumbnail={navigationImg3}/></a>
+              </li>
+              
+              <li className="navigationItem">
+                <a className="navigationLink" href=""><Navigation title="Subscriptions" thumbnail={navigationImg4}/></a>
+              </li>
+
+              <li className="navigationItem">
+                <a className="navigationLink" href=""><Navigation title="Messages" thumbnail={navigationImg5}/></a>
+              </li>
+
+              <li className="navigationItem">
+                <a className="navigationLink" href=""><Navigation title="HoSettingsme" thumbnail={navigationImg6}/></a>
+              </li>
+            </ul>
+
             <div className="navigationLogout">
               <Navigation title="Logout" thumbnail={navigationImg7}/>
+              <hr className="sidebarLine" align="center"       />
+              
             </div>
           </div>
         </div>
-        <div className="sidebarLines">
-          <hr className="sidebarLine" align="center"      color="#E8E8E8" />
-          <hr className="sidebarLine" align="center"  color="#FFFFFF" />
-        </div>
+        
       
       
         <div className="sidebarBottom">
@@ -94,10 +115,8 @@ function App() {
       
       <main className="main">
       <section className="channel">
-        <div className="channelTop">
-        <h2 className="block-title">Explore Channels</h2>
-        <button className="btn">See all</button>
-        </div>
+        <SectionTitle title="Explore Channels"/>
+        
         <div className="channelWrapper">
           <Channel title="FOX NEWS" thumbnail={channelImg1}/>
           <Channel title="CW6 NEWS" thumbnail={channelImg2}/>
@@ -110,7 +129,8 @@ function App() {
         </section>
         
         <section className="headliner">
-          <h2 className="block-title">Today’s Headlines</h2>
+          {/* <h2 className="block-title">Today’s Headlines</h2> */}
+          <SectionTitle title="Today’s Headlines"/>
           <div className="block-content">
             <Headliner title="Hate speech vs free speech" thumbnail={img1} label="BBC NEWS"/>
             <Headliner title="Ontario Liberal leadership" thumbnail={img2} label="BBC NEWS"/>
@@ -122,7 +142,8 @@ function App() {
         </section>
 
         <section className="new">
-        <h2 className="block-title">Featured News</h2>
+        {/* <h2 className="block-title">Featured News</h2> */}
+        <SectionTitle title="Featured News"/>
         <div className="block-content">
           <New title="Travellers to pay more than $2K, Trudeau says" thumbnail={img1New} label="BBC NEWS"/>
           <New title="Myanmar’s military seizes control of country ov  er..." thumbnail={img2New} label="CNN NEWS"/>

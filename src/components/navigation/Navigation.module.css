@@ -12,3 +12,21 @@
     display: flex;
     align-items: center;
 }
+
+.NavigationWrapper {
+    width: 272px;
+    height: 56px;
+    background-color: transparent;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.NavigationWrapper:hover {
+    background-color: #a097ca;
+}
+
+.NavigationWrapper:hover .navigationTitle {
+    color: #503E9D;
+}

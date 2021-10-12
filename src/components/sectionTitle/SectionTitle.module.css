@@ -1,0 +1,37 @@
+.sectionTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    height: 32px;
+}
+
+.blockTitle {
+    margin-bottom: 32px;
+}
+
+.btn {
+    color: #503E9D;
+    display: block;
+    width: 70px;
+    height: 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    background-image: url(./../../assets/images/Channel/rowRight.svg);
+    background-repeat: no-repeat;
+    top: 7px;
+    right: -8px;
+    width: 10px;
+    height: 18px;
+}
