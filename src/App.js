@@ -28,7 +28,7 @@ import headerUser from './assets/images/Header/user.png';
 
 import Navigation from './components/navigation/Navigation';
 import logo from './assets/images/Navigation/logo-01 1 (1).jpg';
-
+import icon1 from './assets/images/Navigation/icon1.svg';
 import navigationImg1 from './assets/images/Navigation/icon1.svg';
 import navigationImg2 from './assets/images/Navigation/icon2.svg';
 import navigationImg3 from './assets/images/Navigation/icon3.svg';
@@ -64,10 +64,14 @@ function App() {
           <img className="sidebarLogo" src={logo} alt="" />
           <div className="navigationBox">
             <ul className="navigationList">
+              
               <li className="navigationItem">
                 <a className="navigationLink" href="">
-                  <Navigation title="Home" thumbnail={navigationImg1}/></a>
-              </li>
+                  <Navigation title="Home"/></a>
+                  {/* <svg >
+                    <use xlink:href="./assets/images/Navigation/icon1.svg#icon1"/>
+                  </svg> */}
+                </li>
 
               <li className="navigationItem">
                 <a className="navigationLink" href=""><Navigation title="Explore" thumbnail={navigationImg2}/></a>
@@ -86,14 +90,13 @@ function App() {
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="HoSettingsme" thumbnail={navigationImg6}/></a>
+                <a className="navigationLink" href=""><Navigation title="Settings" thumbnail={navigationImg6}/></a>
               </li>
             </ul>
 
             <div className="navigationLogout">
               <Navigation title="Logout" thumbnail={navigationImg7}/>
-              <hr className="sidebarLine" align="center"       />
-              
+              <hr className="sidebarLine" align="center"/>              
             </div>
           </div>
         </div>
@@ -102,19 +105,17 @@ function App() {
       
         <div className="sidebarBottom">
           <div className="sidebarCard">
-            <img className="sidebarImg" src={sidebarImg} alt="" />
+            <img className="sidebarImg" src={sidebarImg} alt=""/>
             <h3 className="sidebarTitle">Subscribe to our
             new plan <span className="sidebarMany">$25</span></h3>
             <p className="sidebarText">It is a limited time offer that will expire soon.</p>
             <button className="sidebarBtn">Subscribe now</button>
-
-          </div>
-          
+          </div>          
         </div>
       </aside>
       
       <main className="main">
-      <section className="channel">
+        <section className="channel">
         <SectionTitle title="Explore Channels"/>
         
         <div className="channelWrapper">
@@ -129,7 +130,6 @@ function App() {
         </section>
         
         <section className="headliner">
-          {/* <h2 className="block-title">Today’s Headlines</h2> */}
           <SectionTitle title="Today’s Headlines"/>
           <div className="block-content">
             <Headliner title="Hate speech vs free speech" thumbnail={img1} label="BBC NEWS"/>
@@ -142,7 +142,6 @@ function App() {
         </section>
 
         <section className="new">
-        {/* <h2 className="block-title">Featured News</h2> */}
         <SectionTitle title="Featured News"/>
         <div className="block-content">
           <New title="Travellers to pay more than $2K, Trudeau says" thumbnail={img1New} label="BBC NEWS"/>
@@ -151,8 +150,8 @@ function App() {
         </div>
         </section>
 
+        {/* </div> */}
       
-        
         
       </main>
 

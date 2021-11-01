@@ -1,4 +1,9 @@
-.sectionTitle {
+.container {
+    max-width: 1072px;
+    width: 100%;
+}
+
+.sectionTitleWrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
