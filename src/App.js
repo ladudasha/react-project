@@ -67,35 +67,70 @@ function App() {
               
               <li className="navigationItem">
                 <a className="navigationLink" href="">
-                  <Navigation title="Home"/></a>
+                  <Navigation title="Home" 
+                  name="icon01" 
+                  viewbox='0 0 24 23' 
+                  width='24' 
+                  height='23'/>
+                  </a>
                   {/* <svg >
                     <use xlink:href="./assets/images/Navigation/icon1.svg#icon1"/>
                   </svg> */}
                 </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Explore" thumbnail={navigationImg2}/></a>
+                <a className="navigationLink" href=""><Navigation title="Explore"
+                                  name="icon01" 
+                                  viewbox='0 0 24 23' 
+                                  width='24' 
+                                  height='23'
+                 /></a>
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Saved" thumbnail={navigationImg3}/></a>
+                <a className="navigationLink" href=""><Navigation title="Saved" 
+                                                  name="icon01" 
+                                                  viewbox='0 0 24 23' 
+                                                  width='24' 
+                                                  height='23'
+                                                  /></a>
               </li>
               
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Subscriptions" thumbnail={navigationImg4}/></a>
+                <a className="navigationLink" href=""><Navigation title="Subscriptions" 
+                                                  name="icon01" 
+                                                  viewbox='0 0 24 23' 
+                                                  width='24' 
+                                                  height='23'
+                /></a>
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Messages" thumbnail={navigationImg5}/></a>
+                <a className="navigationLink" href=""><Navigation title="Messages" 
+                                                  name="icon01" 
+                                                  viewbox='0 0 24 23' 
+                                                  width='24' 
+                                                  height='23'
+                /></a>
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Settings" thumbnail={navigationImg6}/></a>
+                <a className="navigationLink" href=""><Navigation title="Settings" 
+                                                  name="icon01" 
+                                                  viewbox='0 0 24 23' 
+                                                  width='24' 
+                                                  height='23'
+                /></a>
               </li>
             </ul>
 
             <div className="navigationLogout">
-              <Navigation title="Logout" thumbnail={navigationImg7}/>
+              <Navigation title="Logout" 
+                                                name="icon01" 
+                                                viewbox='0 0 24 23' 
+                                                width='24' 
+                                                height='23'
+              />
               <hr className="sidebarLine" align="center"/>              
             </div>
           </div>
