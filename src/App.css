@@ -88,6 +88,11 @@
     text-decoration: none;
 }
 
+.navigationIcon {
+    width: 24px;
+    height: 24px;
+}
+
 .sidebarLines {
     margin-top: 32px;
 }
@@ -119,7 +124,7 @@
     position: absolute;
     background-image: url(./assets/images/sidebar/Overlay\ -\ 2.png);
     border-radius: 20px;
-    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
+    /* box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04); */
     background-repeat: no-repeat;
     top: 30px;
     left: 19px;
@@ -132,7 +137,7 @@
     content: "";
     position: absolute;
     background-image: url(./assets/images/sidebar/Overlay\ -\ 3.png);
-    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
+    /* box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04); */
     border-radius: 20px;
     background-repeat: no-repeat;
     top: 53px;
@@ -205,4 +210,8 @@
 
 .sidebarBottom {
     padding: 24px 32px 34px;
+}
+
+.navigationIcon {
+    fill: #503E9D;
 }

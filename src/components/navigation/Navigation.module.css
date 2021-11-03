@@ -29,4 +29,13 @@
 
 .NavigationWrapper:hover .navigationTitle {
     color: #503E9D;
+    font-weight: 800;
+}
+
+.iconSvg {
+    fill: #878787;
+}
+
+.NavigationWrapper:hover .iconSvg {
+    fill: #503E9D;
 }

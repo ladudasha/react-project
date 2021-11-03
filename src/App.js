@@ -39,6 +39,10 @@ import navigationImg7 from './assets/images/Navigation/icon7.svg';
 import sidebarImg from './assets/images/sidebar/fire.svg';
 import SectionTitle from './components/sectionTitle/SectionTitle';
 
+const data = {
+  name: 'icon-username',
+}
+
 
 
 
@@ -65,41 +69,80 @@ function App() {
           <div className="navigationBox">
             <ul className="navigationList">
               
-              <li className="navigationItem">
+            <li className="navigationItem">
                 <a className="navigationLink" href="">
-                  <Navigation title="Home"/></a>
-                  {/* <svg >
-                    <use xlink:href="./assets/images/Navigation/icon1.svg#icon1"/>
-                  </svg> */}
+                  <Navigation title="Home" 
+                              name="icon01" 
+                              viewbox='0 0 24 23' 
+                              width='24' 
+                              height='23'/>
+                  </a>
                 </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Explore" thumbnail={navigationImg2}/></a>
+                <a className="navigationLink" href="">
+                  <Navigation title="Explore"
+                              name="icon02" 
+                              viewbox='0 0 24 24' 
+                              width='24' 
+                              height='24'
+                /></a>
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Saved" thumbnail={navigationImg3}/></a>
+                <a className="navigationLink" href="">
+                  <Navigation title="Saved" 
+                              name="icon03" 
+                              viewbox='0 0 18 24' 
+                              width='18' 
+                              height='24'
+              /></a>
               </li>
               
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Subscriptions" thumbnail={navigationImg4}/></a>
+                <a className="navigationLink" href="">
+                  <Navigation title="Subscriptions" 
+                              name="icon04" 
+                              viewbox='0 0 24 24' 
+                              width='24' 
+                              height='24'
+                /></a>
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Messages" thumbnail={navigationImg5}/></a>
+                <a className="navigationLink" href="">
+                  <Navigation title="Messages" 
+                              name="icon05" 
+                              viewBox="0 0 24 19"
+                              width='24' 
+                              height='19'
+                /></a>
               </li>
 
               <li className="navigationItem">
-                <a className="navigationLink" href=""><Navigation title="Settings" thumbnail={navigationImg6}/></a>
+                <a className="navigationLink" href="">
+                  <Navigation title="Settings" 
+                              name="icon06" 
+                              viewbox='0 0 24 24' 
+                              width='24' 
+                              height='24'
+                /></a>
               </li>
             </ul>
 
             <div className="navigationLogout">
-              <Navigation title="Logout" thumbnail={navigationImg7}/>
+              <Navigation title="Logout" 
+                          name="icon07" 
+                          viewbox='0 0 24 24' 
+                          width='24' 
+                          height='24'
+              />
               <hr className="sidebarLine" align="center"/>              
             </div>
           </div>
         </div>
+        
+      
         
       
       
