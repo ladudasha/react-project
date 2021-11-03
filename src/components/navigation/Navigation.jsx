@@ -17,28 +17,3 @@ function Navigation(props) {
 }
 export default Navigation;
 
-
-
-
-
-
-// import Icon from "../NavigationIcon/NavigationIcon";
-// import s from "./Navigation.module.css"
-
-// function Navigation(props) {
-//     return (
-//     <div className={s.NavigationWrapper}>
-//         <div className={s.NavigationItem}>
-
-//             <img className={s.navigationImg} src={props.thumbnail} alt="" />
-//             <Icon name='icon-username' color="green"/>
-
-                        
-//             <h3 className={s.navigationTitle}>{props.title}</h3>
-//         </div>
-//     </div>
-
-//     );
-
-// }
-// export default Navigation;
