@@ -103,6 +103,39 @@
     border-radius: 0px 24px 24px 0px;
 }
 
+.sidebarBottom {
+    position: relative;
+    z-index: 999;
+}
+
+.sidebarBottom::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    width: 208px;
+    height: 324px;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.sidebarBottom::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    width: 176px;
+    height: 324px;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    z-index: -2;
+}
+
 .sidebarCard {
     width: 240px;
     height: 324px;
@@ -115,36 +148,7 @@
     background: #FFFFFF;
     box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04);
     border-radius: 20px;
-    position: relative;
     z-index: 999;
-}
-
-.sidebarCard::after {
-    content: "";
-    position: absolute;
-    background-image: url(./assets/images/sidebar/Overlay\ -\ 2.png);
-    border-radius: 20px;
-    /* box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04); */
-    background-repeat: no-repeat;
-    top: 30px;
-    left: 19px;
-    width: 208px;
-    height: 324px;
-    z-index: -1;
-}
-
-.sidebarCard::before {
-    content: "";
-    position: absolute;
-    background-image: url(./assets/images/sidebar/Overlay\ -\ 3.png);
-    /* box-shadow: 0px 24px 64px -4px rgba(0, 0, 0, 0.04); */
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    top: 53px;
-    left: 36px;
-    width: 176px;
-    height: 324px;
-    z-index: -2;
 }
 
 .sidebarImg {

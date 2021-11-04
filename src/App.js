@@ -27,7 +27,7 @@ import headerButton from './assets/images/Header/button.png';
 import headerUser from './assets/images/Header/user.png';
 
 import Navigation from './components/navigation/Navigation';
-import logo from './assets/images/Navigation/logo-01 1 (1).jpg';
+import logo from './assets/images/logo1.png';
 import icon1 from './assets/images/Navigation/icon1.svg';
 import navigationImg1 from './assets/images/Navigation/icon1.svg';
 import navigationImg2 from './assets/images/Navigation/icon2.svg';
@@ -116,7 +116,11 @@ function App() {
                               viewBox="0 0 24 19"
                               width='24' 
                               height='19'
+                              counter= '2' 
+                              style={{display: "flex"}}
+
                 /></a>
+              
               </li>
 
               <li className="navigationItem">

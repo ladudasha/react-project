@@ -8,9 +8,16 @@
     margin-left: 24px;
 }
 
+.wrap {
+    display: flex;
+    align-items: center;
+}
+
 .NavigationItem {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .NavigationWrapper {
@@ -38,4 +45,21 @@
 
 .NavigationWrapper:hover .iconSvg {
     fill: #503E9D;
+}
+
+.counter {
+    background: #503E9D;
+    color: #F7FAFC;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    display: none;
 }
